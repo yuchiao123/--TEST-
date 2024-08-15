@@ -1,0 +1,131 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO3e5n8k0M0TykV0TE0z5pF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/yuchiao123/--TEST-/blob/TEST-3/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "jGfa1oPMQCuZ",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "7a6ccef3-5968-4a06-bcd3-5487e43c28f0"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "a\n",
+            "[2, 3, 'a']\n",
+            "[1, 2, 'hello', 'a', 'b', 'c']\n",
+            "[1, 2, 'hello', 'a', 'b', 'c', 'new']\n",
+            "[2, 'hello', 'a', 'b', 'c', 'new']\n",
+            "6\n"
+          ]
+        }
+      ],
+      "source": [
+        "# 创建一个列表\n",
+        "my_list = [1, 2, 3, 'a', 'b', 'c']\n",
+        "\n",
+        "# 访问列表元素\n",
+        "print(my_list[0])  # 输出: 1\n",
+        "print(my_list[3])  # 输出: 'a'\n",
+        "\n",
+        "# 列表切片\n",
+        "print(my_list[1:4])  # 输出: [2, 3, 'a']\n",
+        "\n",
+        "# 修改列表元素\n",
+        "my_list[2] = 'hello'\n",
+        "print(my_list)  # 输出: [1, 2, 'hello', 'a', 'b', 'c']\n",
+        "\n",
+        "# 添加元素到列表末尾\n",
+        "my_list.append('new')\n",
+        "print(my_list)  # 输出: [1, 2, 'hello', 'a', 'b', 'c', 'new']\n",
+        "\n",
+        "# 删除列表中的元素\n",
+        "del my_list[0]\n",
+        "print(my_list)  # 输出: [2, 'hello', 'a', 'b', 'c', 'new']\n",
+        "\n",
+        "# 列表长度\n",
+        "print(len(my_list))  # 输出: 6\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for 变量 in 序列:\n",
+        "    执行语句块\n"
+      ],
+      "metadata": {
+        "id": "SYzDVdEjQQU0"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 遍历列表\n",
+        "fruits = ['apple', 'banana', 'cherry']\n",
+        "for fruit in fruits:\n",
+        "    print(fruit)\n",
+        "# 输出:\n",
+        "# apple\n",
+        "# banana\n",
+        "# cherry\n",
+        "\n",
+        "# 遍历字符串\n",
+        "for char in 'hello':\n",
+        "    print(char)\n",
+        "# 输出:\n",
+        "# h\n",
+        "# e\n",
+        "# l\n",
+        "# l\n",
+        "# o\n",
+        "\n",
+        "# 遍历数字范围\n",
+        "for num in range(1, 5):\n",
+        "    print(num)\n",
+        "# 输出:\n",
+        "# 1\n",
+        "# 2\n",
+        "# 3\n",
+        "# 4\n"
+      ],
+      "metadata": {
+        "id": "klG_mu7wQW5F"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
